@@ -62,7 +62,7 @@ def withdraw(account, amount):
             withdraw('savings', transfer)
             deposit('current', transfer)
             withdraw(account, amount)
-            return 'Withdrawn: £{}. {} had to be moved from your savings'.format(amount, transfer)
+            return 'Withdrawn: £{}. £{} had to be moved from your savings'.format(amount, transfer)
         
         # Is going to go into overdraft so transfer entire savings
         # into current to limit fees paid
